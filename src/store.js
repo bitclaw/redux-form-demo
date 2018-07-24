@@ -1,12 +1,12 @@
 import {createStore, applyMiddleware, combineReducers} from 'redux'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
-import messageReducer from './reducers/message'
-import formReducer from './reducers/message'
+//import messageReducer from './reducers/message'
+import { reducer as formReducer } from 'redux-form';
 
 const reducer = combineReducers({
     form: formReducer,
-    message: messageReducer
+    //message: messageReducer
 })
 
 export default createStore(
