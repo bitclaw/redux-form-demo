@@ -5,7 +5,9 @@ export const customInput = props => {
     return (
         <div>
             <label>{props.label}</label>
-            <input {...props.input} type={props.type} />
+            <input {...props.input}
+                   type={props.type} />
+            <ReactJson src={props.meta}/>
         </div>
     )
 }
@@ -18,7 +20,7 @@ export const customSelect = props => {
                 <option value="tabs">Tabs</option>
                 <option value="spaces">Spaces</option>
             </select>
-            <ReactJson src={props}/>
+            <ReactJson src={props.meta}/>
         </div>
     )
 }
