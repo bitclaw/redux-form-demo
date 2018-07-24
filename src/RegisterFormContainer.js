@@ -6,7 +6,7 @@ import Message from './components/Message'
 //import Footer from './components/Footer'
 
 
-class App extends Component {
+class RegisterFormContainer extends Component {
     submit = values => {
         window.alert(JSON.stringify(values,null,4))
     }
@@ -25,4 +25,4 @@ class App extends Component {
     }
 }
 
-export default App
+export default RegisterFormContainer
