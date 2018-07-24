@@ -10,6 +10,14 @@ class RegisterFormContainer extends Component {
     submit = values => {
         window.alert(JSON.stringify(values,null,4))
     }
+
+    getInitialValues() {
+        return {
+            preference: 'spaces',
+            newsletter: true,
+        }
+    }
+
     render() {
         return (
             <div className="App">
@@ -18,7 +26,7 @@ class RegisterFormContainer extends Component {
                 </header>
                 <div className="Form-App">
                     <Message />
-                    <RegisterForm onSubmit={this.submit}/>
+                    <RegisterForm onSubmit={this.submit} initialValues={this.getInitialValues()}/>
                 </div>
             </div>
         );
