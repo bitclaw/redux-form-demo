@@ -1,4 +1,5 @@
 import React from  'react'
+import ReactJson from 'react-json-view'
 
 export const customInput = props => {
     return (
@@ -17,6 +18,7 @@ export const customSelect = props => {
                 <option value="tabs">Tabs</option>
                 <option value="spaces">Spaces</option>
             </select>
+            <ReactJson src={props}/>
         </div>
     )
 }
