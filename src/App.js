@@ -7,6 +7,9 @@ import Message from './components/Message'
 
 
 class App extends Component {
+    submit = values => {
+        window.alert(JSON.stringify(values,null,4))
+    }
     render() {
         return (
             <div className="App">
@@ -15,7 +18,7 @@ class App extends Component {
                 </header>
                 <div className="Form-App">
                     <Message />
-                    <RegisterForm />
+                    <RegisterForm onSubmit={this.submit}/>
                 </div>
             </div>
         );
