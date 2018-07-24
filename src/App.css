@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.Todo-App {
+  padding-top: 35px;
+  display: inline-block;
+  text-align: left;
+}
+
+input {
+  font-size: 20px
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.message {
+  background-color: #61DAFB;
+  color: white;
+  border: solid 1px #61DAFB;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+}
+
+li span.delete-item {
+  visibility: hidden;
+}
+
+span.delete-tiem button {
+  background: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: red
+}
+
+li:hover span.delete-item {
+  visibility: visible;
+}
+
+a {
+  padding-left: 2px;
+  padding-right: 2px;
+}

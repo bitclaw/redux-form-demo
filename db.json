@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "name": "Configure server",
+      "isComplete": true
+    },
+    {
+      "id": 2,
+      "name": "Start server",
+      "isComplete": true
+    },
+    {
+      "id": 3,
+      "name": "Load data into app",
+      "isComplete": true
+    },
+    {
+      "id": 4,
+      "name": "Add records",
+      "isComplete": true
+    },
+    {
+      "id": 5,
+      "name": "Update records",
+      "isComplete": true
+    },
+    {
+      "name": "Test",
+      "isComplete": true,
+      "id": 6
+    },
+    {
+      "name": "Hello there",
+      "isComplete": false,
+      "id": 7
+    },
+    {
+      "name": "Anothe Test",
+      "isComplete": false,
+      "id": 8
+    }
+  ]
+}
