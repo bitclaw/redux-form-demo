@@ -2,6 +2,11 @@ import React from  'react'
 import cx from 'classnames'
 
 const getValidityClassName = meta => {
+
+    if (meta.asyncValidating) {
+        return 'async-validating'
+    }
+
     if (meta.active) {
         return
     }

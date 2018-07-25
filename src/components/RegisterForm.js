@@ -6,6 +6,7 @@ import {
     minLength,
     maxLength,
     matchesPassword,
+    asyncValidate,
 } from '../validation';
 
 import './RegisterForm.css';
@@ -76,7 +77,9 @@ class RegisterForm extends Component {
 }
 
 RegisterForm = reduxForm({
-    form: 'register'
+    form: 'register',
+    asyncValidate,
+    asyncBlurFields: ['username']
 })(RegisterForm);
 
 export default RegisterForm;
