@@ -1,5 +1,11 @@
 import React from  'react'
 import cx from 'classnames'
+import Select from 'react-select';
+
+const options = [
+    { value: 'tabs', label: 'Tabs' },
+    { value: 'spaces', label: 'Spaces' },
+];
 
 const getValidityClassName = meta => {
 
@@ -18,7 +24,7 @@ const getValidityClassName = meta => {
     if (meta.touched && meta.valid) {
         return 'valid'
     }
-}
+};
 
 export const customInput = props => {
     const {label,input,type,meta } = props
@@ -39,16 +45,20 @@ export const customInput = props => {
             )}
         </div>
     )
-}
+};
 
 export const customSelect = props => {
     return (
         <div>
             <label>{props.label}</label>
+            {/*<Select>*/}
+                {/*options={options}*/}
+            {/*</Select>*/}
+
             <select {...props.input}>
                 <option value="tabs">Tabs</option>
                 <option value="spaces">Spaces</option>
             </select>
         </div>
     )
-}
+};
