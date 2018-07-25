@@ -4,11 +4,18 @@ import './App.css';
 import RegisterForm from './components/RegisterForm'
 import Message from './components/Message'
 //import Footer from './components/Footer'
+import { SubmissionError } from 'redux-form'
 
 
 class RegisterFormContainer extends Component {
     submit = values => {
-        window.alert(JSON.stringify(values,null,4))
+        if (['kent','andy','john','daniel'].includes(values.username)) {
+            throw new SubmissionError({
+                username: 'Username already taken'
+            })
+        } else {
+            window.alert(JSON.stringify(values,null,4))
+        }
     }
 
     getInitialValues() {
