@@ -7,6 +7,8 @@ import {
     maxLength
 } from '../validation';
 
+import './RegisterForm.css';
+
 class RegisterForm extends Component {
     render() {
         const { handleSubmit } = this.props;
